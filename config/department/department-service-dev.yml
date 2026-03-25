@@ -7,4 +7,4 @@ logging:
     '[org.mybatis]': debug
     '[org.mariadb.jdbc.client.impl]': debug
     '[org.springframework.data.redis]': debug
-    '[io.lettuce.core]' : debug
+    '[io.lettuce.core]': debug
