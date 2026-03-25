@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/web
+    username: "{cipher}86773e4568e5374c7d910264f2cc5ef054de937d9e8170a989e532b2c6c6ff38"
+    password: "{cipher}df3e7a63ac55e517adabc6157828d107f2b8110177360b5d3b17673e5e5f62d8"
+mybatis:
+  type-aliases-package: com.beyond.university.*.model.vo
+  mapper-locations:
+    - classpath:mappers/**/*.xml
+springdoc:
+  swagger-ui:
+    operations-sorter: method
+  paths-to-match:
+    - /api/v1/**
