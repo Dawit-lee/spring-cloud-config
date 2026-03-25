@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/web
+    username: "{cipher}d1a2cf9d2ee87047cf00edd43d880a4a329bee991878ab231f35eb4d49f2200e"
+    password: "{cipher}2be8026957e7b19056db0b4853ddce9de04f97780009359e55578b7ece0f37ae"
+  data:
+    redis:
+      host: localhost
+      username: default
+      password: "{cipher}cc3ceb7838d4cdefdd4f131c78e3bee6686c17328ddda26bbc1604dfaf1bbb40"
+      port: 6379
+mybatis:
+  type-aliases-package: com.beyond.university.*.model.vo
+  mapper-locations:
+    - classpath:mappers/**/*.xml
+  configuration:
+    jdbc-type-for-null: NULL
+springdoc:
+  swagger-ui:
+    operations-sorter: method
+  paths-to-match:
+    - /api/v1/**
+jwt:
+  issuer: https://accounts.beyond.com
+  secret: "{cipher}576df3385b03fe5e1718e47d055653e7478f718b2bc479125cbfa15f4997269c744368e98ad9f321a886244685a756d7abfcb3805ca589fd169f66b25810c0e3"
