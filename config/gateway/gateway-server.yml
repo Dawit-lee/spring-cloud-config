@@ -7,7 +7,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defalue-zone: http://localhost:8761/eureka/
+      defalut-zone: http://localhost:8761/eureka/
 spring:
   cloud:
     gateway:
