@@ -1,2 +1,6 @@
 server:
   port: 30021
+logging:
+  level:
+    '[org.mybatis]': debug
+    '[org.mariadb.jdbc.client.impl]': debug
