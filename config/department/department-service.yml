@@ -24,3 +24,11 @@ springdoc:
 jwt:
   issuer: https://accounts.beyond.com
   secret: "{cipher}576df3385b03fe5e1718e47d055653e7478f718b2bc479125cbfa15f4997269c744368e98ad9f321a886244685a756d7abfcb3805ca589fd169f66b25810c0e3"
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defalue-zone: http://localhost:8761/eureka/
