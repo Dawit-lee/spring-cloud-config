@@ -20,4 +20,10 @@ spring:
             - Path=/department/**
             filters:
             - RewritePath=/department/(?<path>.*), /$\{path}
+          - id: subject-service
+            uri: lb://subject-service
+            predicates:
+              - Path=/subject/**
+            filters:
+              - RewritePath=/subject/(?<path>.*), /$\{path}
   
